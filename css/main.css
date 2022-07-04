@@ -1,0 +1,643 @@
+/*Start Global Rules*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    scroll-behavior: smooth;
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+/*End Global Rules*/
+/* Start Variables */
+:root {
+    --main-color-1: #1989a2;
+    --main-color-2: #eac7b5;
+    --main-transition: 0.3s;
+    direction: rtl;
+}
+/* End Variables */
+body {
+    background-color: #f8efe5;
+}
+.main-section {
+    min-height: 100vh;
+    width: 100%;
+    padding: 30px 50px;
+    background-color: var(--main-color-1);
+    border-radius: 0 0 100px 100px;
+
+}
+.main-section header {
+    width: 100%;
+    display: flex;
+	justify-content: space-between;
+    align-items:center;
+    flex-direction: row;
+    padding: 10px 20px;
+}
+.main-section header .logo {
+    font-size: 1.5em;
+    font-weight: 400;
+    width: 20%;
+}
+.main-section header .nav {
+    width: 60%;
+    text-align: center;
+}
+.main-section header .nav a {
+    margin: 0 20px;
+    padding: 10px;
+    position: relative;
+    transition: var(--main-transition);
+}
+.main-section header .nav a:hover {
+    color: var(--main-color-2);
+}
+.main-section section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-section section .right {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10%;
+}
+.main-section section .right h1 {
+    font-size: 3em;
+    line-height: 1.5em;
+    margin-top: 25%;
+}
+.main-section section .right .button {
+    margin-top: 2em;
+    padding: 15px 50px;
+    border-radius: 20px;
+    background-color: var(--main-color-2);
+    color: black;
+    border: none;
+    transition: var(--main-transition);
+}
+.main-section section .right .button:hover {
+    background-color: white;
+}
+.main-section section .left {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    top: 0;
+}
+.main-section section .left .img1 {
+    width: 10%;
+}
+.main-section section .left .img2 {
+    width: 80%;
+}
+.main-section section .left .img3 {
+    width: 10%;
+}
+.main-section section .money {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.main-section section .money img {
+    width: 13%;
+    margin: 0 5%;
+}
+.main-section footer {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    background-color: #f8efe5;
+    border-radius: 80px;
+    margin-top: 30px;
+    padding: 10px;
+}
+.main-section footer .block {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.main-section footer .block .stat {
+    color: black;
+    font-size: 3em;
+    font-weight: bold;
+    background-image: url(../img/main-section-footer.svg);
+    background-size: cover;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.main-section footer .block p {
+    color: rgba(27,27,27,.7);
+    text-align: center;
+    font-size: 1em;
+    padding: 20px 30px;
+}
+.bord {
+    border-right: 1px dashed rgba(27,27,27,.7);
+    border-left: 1px dashed rgba(27,27,27,.7);
+}
+
+.syllabus-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 50px;
+    margin-bottom: 50px;
+}
+.syllabus-section .right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.syllabus-section .right img {
+    width: 500px;
+    height: 500px;
+}
+.syllabus-section .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.syllabus-section .left h1 {
+    color: #333;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+.syllabus-section .left .sillab {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.syllabus-section .left .sillab .num {
+    color: var(--main-color-1);
+    margin: 0 10px;
+    height: fit-content;
+    border: 1px solid var(--main-color-1);
+    border-radius: 50%;
+    padding: 5px;
+}
+.syllabus-section .left .sillab .text h3 {
+    color: #333;
+}
+.syllabus-section .left .sillab .text p {
+    color: rgba(27,27,27,.7);
+    margin-top: 10px;
+}
+.syllabus-section .left .sillab img {
+    margin: 10px;
+}
+.syllabus-section .left .sillab:nth-child(even) img {
+    transform: rotateY(178deg);
+}
+.courses-section {
+    width: 100%;
+    padding: 30px 50px;
+    background-color: var(--main-color-1);
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.courses-section .text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.courses-section .text h1 {
+    line-height: 1.5em;
+    font-weight: 600;
+    width: 70%;
+}
+.courses-section .text p {
+    line-height: 1.5em;
+    font-size: 1.3em;
+    opacity: 0.8;
+}
+.courses-section .courses {
+    display: flex;
+}
+.courses-section .courses .card {
+    width: 30%;
+    background-color: #f8efe5;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px;
+    padding: 20px;
+}
+.courses-section .courses .card:hover {
+    background-color: white;
+}
+.courses-section .courses .card .card-text h6 {
+    color: rgba(30,30,30,.5);
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.courses-section .courses .card .card-text p {
+    color: #000;
+    font-size: 1.2em;
+}
+.courses-section .courses .card .more {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+.courses-section .courses .card .more a {
+    color: var(--main-color-1);
+    margin-bottom: 20px;
+}
+.courses-section .courses .card .more img {
+    max-width: 70%;
+}
+.reviews-section {
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.reviews-section h1 {
+    color: #333;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 80px;
+}
+.reviews-section .students-reviews {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.reviews-section .students-reviews .review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    margin-right: 3%;
+}
+.reviews-section .students-reviews .review img {
+    width: 100px;
+    margin: 10px;
+}
+.reviews-section .students-reviews .review h3 {
+    color: #333;
+    margin-top: 30px;
+}
+.reviews-section .students-reviews .review p {
+    color: rgba(30,30,30,.5);
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+}
+.footer-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+}
+.footer-section .top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.footer-section .top .right h1 {
+    color: #333;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+.footer-section .top .right p {
+    color: rgba(30,30,30,.5);
+}
+.footer-section .top .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-section .top .left form {
+    margin-top: 30px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-section .top .left form input[type="email"] {
+    width: 300px;
+    color: #000;
+    border-color: rgba(30,30,30,.5);
+    border-radius: 25px;
+    padding: 15px;
+}
+.footer-section .top .left form input[type="email"]:focus {
+    outline: none;
+}
+.footer-section .top .left form input[type="submit"] {
+    border: none;
+    padding: 15px 40px;
+    border-radius: 20px;
+    background-color: var(--main-color-2);
+    color: black;
+    border: none;
+    transition: var(--main-transition);
+    cursor: pointer;
+    margin-right: 10px;
+}
+.footer-section .bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-section .bottom .social-media {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-section .bottom .social-media i {
+    color: #333;
+    border: 1px solid rgba(30,30,30,.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+.footer-section .bottom .social-media a:first-of-type i {
+    padding: 10px 14px;
+}
+.footer-section .bottom .social-media i:hover {
+    background-color: var(--main-color-1);
+    color: white;
+}
+.footer-section .bottom .sections {
+    display: flex;
+    width: 30%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px;
+}
+.footer-section .bottom .sections a {
+    color: #333;
+    width: 40%;
+    margin: 10px;
+    transition: var(--main-transition);
+}
+.footer-section .bottom .sections a:hover {
+    color: var(--main-color-1);
+}
+.footer-section .bottom .contact {
+    display: flex;
+    width: 40%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px 10px;
+}
+.footer-section .bottom .contact a {
+    color: #333;
+    margin: 10px;
+    text-transform: uppercase;
+    direction:ltr;
+}
+.footer-section footer {
+    margin-top: 30px;
+    padding-top: 10px;
+    text-align: center;
+    color: #333;
+    border-top: 1px solid rgba(30,30,30,.3);
+}
+.footer-section footer a {
+    color: var(--main-color-1);
+    margin-left:10px ;
+}
+@media (max-width: 992px) {
+    .reviews-section {
+        padding-bottom: 0;
+    }
+    .main-section header .nav {
+        width: 70%;
+    }
+    .main-section section .right h1 {
+        font-size: 2.1em;
+    }
+    .courses-section .text h1 {
+        font-size: 1.6em;
+    }
+    .courses-section .text p {
+        font-size: 1em;
+    }
+    .courses-section .courses .card .card-text p {
+        font-size: 1em;
+    }
+    .courses-section .courses .card .more {
+        margin-top: 40px;
+    }
+    .courses-section .courses .card .more img {
+        max-width: 65%;
+    }
+    .courses-section .courses .card .more a {
+        font-size: 0.8em;
+    }
+    .footer-section .top .right h1 {
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 768px) {
+    .main-section header {
+        flex-direction: column;
+    }
+    .main-section header .logo {
+        width: fit-content;
+        margin-bottom: 15px;
+    }
+    .main-section header .nav {
+        width: 100%;
+    }
+    .main-section section .right h1 {
+        font-size: 1.5em;
+    }
+    .main-section section .right .button {
+        padding: 15px 30px;
+    }
+    .main-section section .right p {
+        line-height: 25px;
+    }
+    .main-section footer .block .stat {
+        font-size: 2.5em;
+    }
+    .main-section footer .block p {
+        padding: 20px 10px;
+    }
+    .syllabus-section .right {
+        width: 30%;
+    }
+    .syllabus-section .right img {
+        width: 300px;
+        height: 300px;
+    }
+    .syllabus-section .left {
+        width: 70%;
+    }
+    .courses-section .text {
+        flex-direction: column;
+    }
+    .courses-section .text h1 {
+        font-size: 1.4em;
+        text-align: center;
+    }
+    .courses-section .text p {
+        font-size: 0.9em;
+        text-align: center;
+    }
+    .courses-section .courses {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .courses-section .courses .card {
+        width: 40%;
+    }
+    .footer-section .top {
+        flex-direction: column;
+    }
+    .footer-section .top .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section .top .left form {
+        margin-top: 0;
+    }
+    .footer-section .bottom {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-section .bottom .social-media {
+        width: fit-content;
+        flex-wrap: nowrap;
+    }
+    .footer-section .bottom .sections {
+        width: fit-content;
+    }
+    .footer-section .bottom .sections {
+        flex-wrap: nowrap;
+    }
+    .footer-section .bottom .sections a {
+        width: fit-content;
+    }
+    .footer-section .bottom .contact {
+        width: fit-content;
+    }
+}
+@media (max-width: 550px) {
+    .main-section {
+        padding: 30px 10px;
+    }
+    .main-section header .nav {
+        display: none;
+    }
+    .main-section header .logo {
+        margin-bottom: 0;
+    }
+    .main-section section .left {
+        display: none;
+    }
+    .main-section section .right {
+        width: 100%;
+        justify-content: center;
+    }
+    .main-section section .right h1 {
+        margin-top: 5%;
+    }
+    .main-section section .right .button {
+        padding: 15px 20px;
+    }
+    .main-section section .right h1 {
+        font-size: 1.8em;
+    }
+    .main-section section .right p {
+        line-height: 25px;
+        width: 100%;
+        text-align: center;
+    }
+    .syllabus-section .right {
+        width: 0;
+        display: none;
+    }
+    .syllabus-section .right img {
+        display: none;
+    }
+    .syllabus-section .left {
+        width: 100%;
+    }
+    .courses-section {
+        padding: 30px 10px;
+    }
+    .reviews-section {
+        padding: 30px 10px;
+    }
+    .footer-section {
+        padding: 30px 10px;
+    }
+    .footer-section .bottom {
+        flex-direction: column;
+    }
+    .footer-section .bottom .social-media {
+        width: fit-content;
+    }
+    .footer-section .bottom .sections {
+        width: fit-content;
+    }
+}
+@media (max-width:450px) {
+    .courses-section .courses .card {
+        width: 60%;
+    }
+    .reviews-section .students-reviews {
+        margin-bottom: 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .reviews-section .students-reviews .review {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .reviews-section .students-reviews .review p {
+        border: none;
+    }
+    .main-section footer .block .stat {
+        font-size: 2em;
+    }
+    .main-section footer .block p {
+        padding: 20px 0px;
+    }
+    .footer-section .bottom .contact {
+        justify-content: center;
+    }
+}
