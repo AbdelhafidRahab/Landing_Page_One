@@ -1,2 +1,2 @@
-# Landing_Page_One_ar
-<a href="https://abdelhafidrahab.github.io/Landing_Page_One_ar/"> 🚀 DEMO  </a>
+# Landing_Page_One
+<a href="https://abdelhafidrahab.github.io/Landing_Page_One"> 🚀 DEMO  </a>
