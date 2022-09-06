@@ -23,6 +23,7 @@ a {
 /* End Variables */
 body {
     background-color: #f8efe5;
+    overflow: hidden;
 }
 .main-section {
     width: 100%;
