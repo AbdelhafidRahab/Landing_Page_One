@@ -23,7 +23,6 @@ a {
 /* End Variables */
 body {
     background-color: #f8efe5;
-    overflow: hidden;
 }
 .main-section {
     width: 100%;
@@ -639,5 +638,11 @@ body {
     }
     .footer-section .bottom .contact {
         justify-content: center;
+    }
+    .footer-section .top .left form {
+        flex-wrap: wrap;
+    }
+    .footer-section .top .left form input[type="submit"] {
+        margin-top: 15px;
     }
 }
