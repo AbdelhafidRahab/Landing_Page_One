@@ -645,4 +645,7 @@ body {
     .footer-section .top .left form input[type="submit"] {
         margin-top: 15px;
     }
+    .footer-section .top .left form input[type="email"] {
+        width: 280px;
+    }
 }
